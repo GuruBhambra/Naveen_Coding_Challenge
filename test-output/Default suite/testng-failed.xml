@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumMethods.All_Selenium_Methods.Pet_Diseases">
+      <class name="PracticeSelenium.GoogleFlights">
         <methods>
-          <include name="petDiseasesMap"/>
-          <include name="SetUp"/>
           <include name="tearDown"/>
+          <include name="getFlightName"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- SeleniumMethods.All_Selenium_Methods.Pet_Diseases -->
+      </class> <!-- PracticeSelenium.GoogleFlights -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

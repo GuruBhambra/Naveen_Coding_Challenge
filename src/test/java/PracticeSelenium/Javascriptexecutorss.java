@@ -1,4 +1,4 @@
-package SeleniumMethods.All_Selenium_Methods;
+package PracticeSelenium;
 
 import java.time.Duration;
 import java.util.List;

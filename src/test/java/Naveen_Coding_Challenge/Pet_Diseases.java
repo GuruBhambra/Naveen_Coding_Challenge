@@ -1,4 +1,4 @@
-package SeleniumMethods.All_Selenium_Methods;
+package Naveen_Coding_Challenge;
 
 import java.time.Duration;
 import java.util.List;
@@ -40,7 +40,7 @@ public class Pet_Diseases {
 		a.scrollByAmount(0, 500).build().perform();
 		statesName = 	driver.findElements(By.xpath("//*[name()='svg']//*[local-name()='g' and @id='features']//*[@class = 'region']"));
 	
-	System.out.println(statesName.size());
+	System.out.println("The total number of states in America are --> "+" "+statesName.size()+" "+"states");
 	for(int i=0;i<statesName.size();i++) {
 		System.out.println(statesName.get(i).getAttribute("id"));
 		a.moveToElement(statesName.get(i)).perform();
@@ -49,7 +49,7 @@ public class Pet_Diseases {
 		
 	if(statesName.get(i).getAttribute("id").equalsIgnoreCase("new-york")) {
 		a.moveToElement(statesName.get(i)).click().perform();
-		Thread.sleep(200);
+		Thread.sleep(100);
 		break;
 		}
 	
@@ -59,6 +59,7 @@ public class Pet_Diseases {
 	
 	@AfterMethod
 	public void tearDown() throws InterruptedException {
+		a.scrollByAmount(0, 500).build().perform();
 		Thread.sleep(2000);
 		
 		driver.quit();
